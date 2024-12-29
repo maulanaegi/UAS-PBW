@@ -84,6 +84,3 @@ Jika Anda mengalami masalah, periksa hal berikut:
 1. Pastikan semua prasyarat terinstal dengan benar.
 2. Periksa konfigurasi di file .env.
 3. Periksa log aplikasi di folder `storage/logs/`.
-
-## Lisensi
-Proyek ini menggunakan lisensi [MIT](https://opensource.org/licenses/MIT). Silakan lihat file `LICENSE` untuk detail lebih lanjut.
