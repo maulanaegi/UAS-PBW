@@ -7,60 +7,83 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About Laravel
+## Wanderly
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+# Aplikasi Laravel
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Panduan untuk menjalankan aplikasi Laravel ini.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Prasyarat
+Sebelum memulai, pastikan Anda memiliki hal-hal berikut:
+- PHP versi 8.0 atau lebih baru
+- Composer
+- Database (MySQL/PostgreSQL)
+- Node.js (untuk mengelola front-end dependencies)
+- Web server seperti Apache atau Nginx
 
-## Learning Laravel
+## Langkah-langkah Menjalankan Aplikasi
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### 1. Clone Repositori
+Clone repositori ini ke komputer lokal Anda:
+```bash
+git clone https://github.com/username/nama-repositori.git
+cd nama-repositori
+```
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+### 2. Instal Dependensi
+Instal semua dependensi backend menggunakan Composer:
+```bash
+composer install
+```
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### 3. Konfigurasi File .env
+Salin file .env.example menjadi .env:
+```bash
+cp .env.example .env
+```
+Sesuaikan konfigurasi database, seperti nama database, username, dan password, di file .env.
 
-## Laravel Sponsors
+### 4. Generate Application Key
+Generate application key untuk aplikasi:
+```bash
+php artisan key:generate
+```
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### 5. Migrasi dan Seed Database
+Jalankan migrasi untuk membuat tabel di database:
+```bash
+php artisan migrate:fresh --seed
+```
+Note : menjalankan perintah '--seed' untuk seed data user
+- (user)
+- email :user@gmail.com
+- password :password
+- (admin)
+- email :admin@gmail.com
+- password :password
 
-### Premium Partners
+### 6. Jalankan Server Laravel
+Jalankan server development Laravel:
+```bash
+php artisan serve
+```
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+### 7. Kelola Frontend Assets
+Web belum berjalan dikarenakan harus mengaktifkan dependensinya karena website ini menggunakan tailwind dan alpine.js:
+- Instal dependensi frontend:
+  ```bash
+  npm install
+  ```
+- Compile assets:
+  ```bash
+  npm run dev
+  ```
 
-## Contributing
+## Troubleshooting
+Jika Anda mengalami masalah, periksa hal berikut:
+1. Pastikan semua prasyarat terinstal dengan benar.
+2. Periksa konfigurasi di file .env.
+3. Periksa log aplikasi di folder `storage/logs/`.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## Lisensi
+Proyek ini menggunakan lisensi [MIT](https://opensource.org/licenses/MIT). Silakan lihat file `LICENSE` untuk detail lebih lanjut.
