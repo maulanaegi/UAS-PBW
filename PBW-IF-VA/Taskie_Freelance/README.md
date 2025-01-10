@@ -6,7 +6,7 @@ Taskie-Freelance adalah sebuah platform inovatif yang bertujuan untuk mempertemu
 ---
 
 ## **Anggota Tim**
-1. **Virzan Pasa Nugraha** - 220660121054 [COO]  
+1. **Virzan Pasa Nugraha** - 220660121054  
 2. **M. Reksa Aji Winganun** - 220660121001  
 3. **Sigit Pangestu** - 220660121169   
 
