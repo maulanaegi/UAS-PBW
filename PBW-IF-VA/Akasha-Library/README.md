@@ -64,7 +64,7 @@ Berikut implementasi CRUD (Create, Read, Update, Delete):
 
 2. **Clone Repository**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/RaniSitiNabila/Akasha-Library.git
    cd akasha-library
    ```
 
