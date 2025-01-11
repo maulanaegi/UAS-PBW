@@ -244,7 +244,7 @@ Ketika user sudah melakukan register atau daftar akun, user bisa melakukan login
 ### 3. HomePage
 
 Ketika User sukses melakukan login pada Halaman Login, maka akan muncul tampilan utama website Blog IT, disini kita di suguhkan dengan beberapa fitur seperti filter dan kategori artikel
-![Halaman HomePage Blog TI](https://github.com/Reswn/Blog-app/blob/main/Screenshot_10-1-2025_135835_dashboard.clerk.com.jpeg?raw=true).
+![Halaman HomePage Blog TI](https://github.com/Reswn/Blog-app/blob/main/Screenshot_10-1-2025_134914_localhost.jpeg?raw=true).
 
 ### 4. Buka Konten
 
