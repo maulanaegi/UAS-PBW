@@ -1,0 +1,64 @@
+.home {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  background: url(../assets/img/ppp.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.hero {
+  padding-top: 10rem;
+}
+
+.hero h1 {
+  padding-top: 5rem;
+}
+
+.info-tinggi {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+footer {
+  background: #1e1f26;
+}
+
+footer h1 {
+  padding-top: 5rem;
+}
+
+.email {
+  padding-top: 5rem;
+  display: flex;
+  align-items: center;
+  padding-bottom: 5rem;
+}
+
+.custom-bg {
+  background-color: #d9d9d9; /* Warna latar belakang abu-abu terang */
+  border-radius: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 10px;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+}
+th,
+td {
+  padding: 10px;
+  text-align: left;
+}
+th {
+  background-color: #f2f2f2;
+}
+
+textarea {
+  padding: 100px;
+}
