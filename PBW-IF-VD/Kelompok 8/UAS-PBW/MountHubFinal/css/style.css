@@ -1,0 +1,153 @@
+/* Body dan latar belakang */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('Gunung-home1.jpeg');
+    background-color: #ffffff;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container utama */
+.container {
+    background: rgba(255, 255, 255, 0.7); /* Transparansi putih */
+    backdrop-filter: blur(10px); /* Efek blur */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    display: grid;
+    gap: 20px; /* Jarak antar elemen dalam kontainer */
+}
+
+/* Judul */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Reset padding pada form input */
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Pastikan padding tidak menambah lebar */
+}
+
+/* Agar tombol juga pas dengan lebar kontainer */
+button {
+    width: 100%;
+    padding: 10px;
+    background: #004768;
+    border: none;
+    color: #f1f3ce;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    box-sizing: border-box; /* Agar padding tidak menambah lebar tombol */
+}
+
+
+
+button:hover {
+    background: #00293c;
+}
+
+/* Error message */
+.error {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Link register */
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Tombol Login dengan Google */
+.google-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #004768;
+    padding: 10px;
+    border-radius: 4px;
+    color: #f1f3ce;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.google-btn img {
+    width: 30px; /* Ukuran gambar Google logo */
+    margin-right: 10px; /* Menambahkan jarak antara gambar dan teks */
+}
+
+.google-btn:hover {
+    background: #00293c;
+}
+
+/* Tombol Logout */
+.logout-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #FF4136;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.logout-btn:hover {
+    background: #C0392B;
+}
+
+/* Media Query untuk tampilan responsif pada perangkat kecil (Mobile) */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+        max-width: 90%; /* Menyesuaikan lebar container agar lebih kecil di perangkat mobile */
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    button, form input {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .google-btn {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .google-btn img {
+        width: 25px; /* Menyesuaikan ukuran gambar Google logo di perangkat mobile */
+    }
+
+    .logout-btn {
+        width: 100%; /* Agar tombol logout juga bisa full width di mobile */
+        font-size: 14px;
+    }
+}
