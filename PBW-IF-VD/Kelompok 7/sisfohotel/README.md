@@ -1,3 +1,9 @@
+Anggota kelompok 7
+EGI RANGGA MAULANA
+ALIF GUMELAR SYAH MOESLIM
+RUSPANDI
+YOGI CAHYA YOGASWARA
+
 # Sistem Informasi
 Sistem Informasi Pemesanan Kamar Hotel Menggunakan PHP dan MySQL
 
